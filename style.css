@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Referências: 
+Enroladinho: https://minhasdelicias.com/receita/enroladinho-de-salsicha-empanado/
+Coxinha: https://pixabay.com/pt/images/search/coxinha/
+Quibe: https://vimaster.ind.br/4-receitas-de-quibe-que-voce-vai-querer-testar-agora-mesmo/  
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-image: url(./imagem_rodape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lista_menu{  
+    background-color: rgb(180, 1, 1);
+    border-top: 0px;
+    border-left: medium;
+    border-right: medium;
+    border-bottom: medium;
+    border-color: black;
+    border-style: solid;
+    max-width: 1000px;
+}
+
+#lista_menu ul{
+    border-top: medium;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-color: black;
+    border-style: solid;
+    list-style-type: none;
+    padding: 0px;
+    background-color: rgb(180, 1, 1);
+    text-align: center;
+}
+
+#lista_menu ul li{
+    display: inline;  
+}
+#lista_menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .1,5s;
+}
+#lista_menu ul li a:hover{
+    background-color: rgb(72, 82, 90);
+}
+#icone{
+    list-style-image:  url(./icone-salgado.png.opdownload);
+}
+.imagem_inicio{
+    height: 60px;
+    width: 60px;
+    padding: 2px;
+}
+img{
+    max-width: 100%;
+    max-width: 100%;
+}
+#texto_principal{
+    background-color: rgb(180, 1, 1);
+    color:white;
+    max-width: 1000px;
+    font-size: 50px;
+    text-align: center;
+    border-top: 0px;
+    border-right: medium;
+    border-left: medium;
+    border-bottom: 0px;
+    border-color: black;
+    border-style: solid;
+}
+#container_conteudo{
+    background-color: rgb(180, 1, 1);
+    max-width: 1000px;
+    border-top: 0px;
+    border-right: medium;
+    border-bottom:0px;
+    border-left: medium;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+#coxinha{
+    max-width: 400px; 
+    box-shadow: 0 0 1em rgb(255, 255, 255);
+}
+#enroladinho{
+    max-width: 400px;
+    box-shadow: 0 0 1em rgb(255, 255, 255);
+}
+#quibe{
+    max-width: 400px;
+    box-shadow: 0 0 1em rgb(255, 255, 255);
+}
+h3{
+    font-size: 13px;
+    color: white;
+}
+#description{
+    max-width: 500px;
+}
+#description h3{
+    font-size: 30px;
+}
+#description p{
+    font-size: 17px;  
+}
+#formatting{
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+}
+#container_rodape{
+    max-height: 25px;
+    max-width: 500px;
+    display:flex;
+}
+#rodape{
+    background-color: rgb(180, 1, 1);
+    border-top: medium;
+    border-left: medium;
+    border-right: medium;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;   
+    max-width: 1000px;
+}
+#rodape h3{
+    margin-top: 1px;
+}
+#rodape a{
+    text-decoration: none;
+}
+#rodape a:visited{
+    color:white
+}
+#rodape a:link{
+    color:white
+}
+
+@media (max-width: 717px){
+    #formatting{
+        margin: 0px 15px 0px 15px;
+    }
+    #coxinha,#enroladinho,#quibe{
+        box-shadow: none;
+        border: medium;
+        border-style: solid;
+        border-color: black;
+        max-width: 300px;
+    }
+    #texto_principal{
+        font-size: 30px;
+    }
+    #description h3{
+        font-size: 20px;
+    }
+    #description p{
+        font-size: 15px;  
+    }
+}
