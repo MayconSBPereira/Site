@@ -126,6 +126,20 @@ h3{
     max-width: 500px;
     display:flex;
 }
+#dev_estudo{
+    color: white;
+    background-color: rgb(180, 1, 1);
+    border-top: medium;
+    border-left: medium;
+    border-right: medium;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 12px;
+    max-width: 1000px;
+}
 #rodape{
     background-color: rgb(180, 1, 1);
     border-top: medium;
