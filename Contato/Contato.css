@@ -1,51 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0%;
-    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;  
 }
 body{
-    background-image: url(../imagem_rodape.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Crimson Text', serif;
+    height: 100vh;
+}
+input{
+    border-radius: 5px;
 }
 #lista_menu{  
-    background-color: rgb(180, 1, 1);
+    background-color: #8B8989;
     border-top: 0px;
-    border-left: medium;
-    border-right: medium;
+    border-left: 0px;
+    border-right: 0px;
     border-bottom: medium;
     border-color: black;
     border-style: solid;
-    max-width: 1000px;
-    border-end-start-radius: 5px;
-    border-end-end-radius: 5px;
+    box-shadow: 0 0 1em black;
+    width: 100%;
+    position: relative;
+    font-family: 'Alkalami', serif;
 }
+
 #lista_menu ul{
-    border-top: medium;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-color: black;
-    border-style: solid;
     list-style-type: none;
-    padding: 0px;
-    background-color: rgb(180, 1, 1);
+    padding-top: 20px;
+    background-color: #EEE9E9;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding-left: 100px;
 }
 
 #lista_menu ul li{
     display: inline;  
 }
 #lista_menu ul li a{
-    color: white;
+    color: red;
     text-decoration: none;
     display: inline-block;
-    padding: 10px;
+    padding-right: 100px;
     transition: background .1,5s;
 }
 #lista_menu ul li a:hover{
-    background-color: rgb(72, 82, 90);
+    color: rgb(0, 0, 0, 0.7);
 }
 #icone{
     list-style-image:  url(./icone-salgado.png.opdownload);
@@ -54,10 +61,18 @@ body{
     height: 60px;
     width: 60px;
     padding: 2px;
+    position: absolute;
+    left: 30px;
 }
 img{
     max-width: 100%;
     max-width: 100%;
+}
+.container_bk{
+    background-image: url(../imagem_rodape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
 }
 #container_conteudo{
     background-color: rgb(180, 1, 1);
@@ -74,7 +89,6 @@ img{
     position: relative;
     padding: 15px;
     border-radius: 15px;
-    margin-top: 70px;
     margin-bottom: 70px;
 }
 #container_conteudo h3{
@@ -100,38 +114,25 @@ legend{
     background-image: url(../imagem_rodape.png);
     border-radius: 5px;
 }
+#descricao{
+    border-radius: 5px;
+}
 #container_rodape{
     max-height: 25px;
     max-width: 500px;
     display:flex;
 }
-#dev_estudo{
-    color: white;
-    background-color: rgb(180, 1, 1);
-    border-top: medium;
-    border-left: medium;
-    border-right: medium;
-    border-bottom: 0px;
-    border-style: solid;
-    border-color: black;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;   
-    font-size: 12px;
-    max-width: 1000px;
-}
 #rodape{
-    background-color: rgb(180, 1, 1);
+    background-color: #EEE9E9;
     border-top: medium;
-    border-left: medium;
-    border-right: medium;
+    border-left: 0px;
+    border-right: 0px;
     border-bottom: 0px;
     border-style: solid;
     border-color: black;
     text-align: center;
     font-family: 'Open Sans', sans-serif;   
-    max-width: 1000px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    width: 100%;
 }
 #rodape h3{
     margin-top: 1px;
@@ -140,10 +141,20 @@ legend{
     text-decoration: none;
 }
 #rodape a:visited{
-    color:white
+    color: black;
 }
 #rodape a:link{
-    color:white
+    color: black;
+}
+#dev_estudo{
+    background-color: #EEE9E9;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 12px;
+    width: 100%;
+}
+#dev_estudo p{
+    color: black;
 }
 #submit{
     background-image: linear-gradient(to right, rgb(217, 255, 0), rgb(149, 151, 1));
@@ -151,4 +162,14 @@ legend{
     border: none;
     border-radius: 5px;
     padding: 15px;
+}
+@media (max-width: 725px){
+    #lista_menu ul li a{
+        padding-right: 50px;
+    }
+}
+@media (max-width: 455px){
+    #lista_menu ul li a{
+        padding-right: 20px;
+    }
 }

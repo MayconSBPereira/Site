@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
 /* https://restaurantguru.com.br/Tio-Rui-Salgados-Eunapolis
     https://www.ametistapedras.com.br // Icone Whatsapp
 */
@@ -7,50 +9,54 @@
 *{
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0%;
-    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;  
 }
 body{
     background-image: url(./imagem_rodape.png);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Crimson Text', serif;
+    height: 100vh;
 }
 #lista_menu{  
-    background-color: rgb(180, 1, 1);
+    background-color: #8B8989;
     border-top: 0px;
-    border-left: medium;
-    border-right: medium;
+    border-left: 0px;
+    border-right: 0px;
     border-bottom: medium;
     border-color: black;
     border-style: solid;
-    max-width: 1000px;
+    box-shadow: 0 0 1em black;
+    width: 100%;
+    position: relative;
+    font-family: 'Alkalami', serif;
 }
 
 #lista_menu ul{
-    border-top: medium;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-color: black;
-    border-style: solid;
     list-style-type: none;
-    padding: 0px;
-    background-color: rgb(180, 1, 1);
+    padding-top: 20px;
+    background-color: #EEE9E9;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding-left: 100px;
 }
 
 #lista_menu ul li{
     display: inline;  
 }
 #lista_menu ul li a{
-    color: white;
+    color: red;
     text-decoration: none;
     display: inline-block;
-    padding: 10px;
+    padding-right: 100px;
     transition: background .1,5s;
 }
 #lista_menu ul li a:hover{
-    background-color: rgb(72, 82, 90);;
+    color: rgb(0, 0, 0, 0.7);
 }
 #icone{
     list-style-image:  url(./icone-salgado.png.opdownload);
@@ -59,6 +65,8 @@ body{
     height: 60px;
     width: 60px;
     padding: 2px;
+    position: absolute;
+    left: 30px;
 }
 img{
     max-width: 100%;
@@ -75,6 +83,9 @@ img{
     border-bottom: 0px;
     border-color: black;
     border-style: solid;
+    height: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 #conteudo_menu h3{
     font-size: 30px;
@@ -103,13 +114,15 @@ img{
     border:medium;
     border-color: black;
     border-style:solid;
-    box-shadow: 0 0 1em white;
+    box-shadow: 0 0 1em black;
+    border-radius: 10px;
 }
 iframe{
     border:medium;
     border-color: black;
     border-style:solid;
     box-shadow: 0 0 1em white;
+    border-radius: 10px;
 }
 #endereco p{
     text-align: center;
@@ -119,31 +132,17 @@ iframe{
     max-width: 500px;
     display:flex;
 }
-#dev_estudo{
-    color: white;
-    background-color: rgb(180, 1, 1);
-    border-top: medium;
-    border-left: medium;
-    border-right: medium;
-    border-bottom: 0px;
-    border-style: solid;
-    border-color: black;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;   
-    font-size: 12px;
-    max-width: 1000px;
-}
 #rodape{
-    background-color: rgb(180, 1, 1);
+    background-color: #EEE9E9;
     border-top: medium;
-    border-left: medium;
-    border-right: medium;
+    border-left: 0px;
+    border-right: 0px;
     border-bottom: 0px;
     border-style: solid;
     border-color: black;
     text-align: center;
     font-family: 'Open Sans', sans-serif;   
-    max-width: 1000px;
+    width: 100%;
 }
 #rodape h3{
     margin-top: 1px;
@@ -152,10 +151,18 @@ iframe{
     text-decoration: none;
 }
 #rodape a:visited{
-    color:white
+    color: black;
 }
 #rodape a:link{
-    color:white
+    color: black;
+}
+#dev_estudo{
+    color: black;
+    background-color: #EEE9E9;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 12px;
+    width: 100%;
 }
 @media (max-width: 876px){
     #localizacao{

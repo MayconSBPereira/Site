@@ -18,65 +18,66 @@
             <li><a href="../Contato/Contato.html"><b>Contato</b></a></li>
         </ul>
     </nav>
-    <main id="container_conteudo">
-        <div class="box">
-            <form id="formulario_pedido" action="">
-                <fieldset>
-                    <legend><b>Formulário de Pedidos: </b></legend><br>
-                    <div class="inputBox">
-                        <label for="nome">Nome</label>
-                        <input type="text" name="Nome" id="nome" required>
-                    </div>
-                    <br>
-                    <div class="inputBox">
-                        <label for="endereco">Endereço</label>
-                        <input type="text" name="Endereço" id="endereco" required>
-                    </div>
-                    <br>
-                    <div class="inputBox">
-                        <label for="fone">Celular com DDD</label>
-                        <input type="tel" id="fone" name="fone" id="numero" required pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="73 99999-9999">
-                    </div>
-                    <br>
-                    <div class="inputBox">
-                        <p><b>Quais tipos de salgados?</b></p>
+    <div class="container_bk">
+        <main id="container_conteudo">
+            <div class="box">
+                <form id="formulario_pedido" action="">
+                    <fieldset>
+                        <legend><b>Formulário de Pedidos: </b></legend><br>
+                        <div class="inputBox">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="Nome" id="nome" required>
+                        </div>
                         <br>
-                        <input type="checkbox" id="tipo" name="Salgado" value="Coxinha">
-                        <label for="Coxinha">Coxinha</label><br>
-                        <input type="checkbox" id="tipo" name="Salgado" value="Enroladinho">
-                        <label for="Enroladinho">Enroladinho</label><br>
-                        <input type="checkbox" id="tipo" name="Salgado" value="Quibe">
-                        <label for="Quibe">Quibe</label><br>
-                    </div>
-                    <br>
-                    <div class="inputBox">
-                        <label for="Descricao">Descrição/Observação:</label><br>
-                        <textarea id="descricao" name="msg" rows="4" cols="45"></textarea><br>
-                    </div>
-                    <br>
-                    <div class="inputBox">
-                        <input type="submit" value="Enviar" id="submit">
-                    </div>
-                    <br>
-                </fieldset>
-            </form>
-        </div><br>
-        <div id="WP">
-            <p><b>Ou Entre em contato conosco via WhatsApp:</b></p>
-            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=351922274402&text=Olá!">
-                <img src="./wp.png" height="100%" width="100%">
-            </a> 
-        </div>
-    </main>
-    <footer id="rodape">
-        <div id="container_rodape">
-            <a href="../Termos E Politica/Termos.html">Termos de uso</a>
-            <a href="../Termos E Politica/Politica.html">Politicas de Privacidade</a>
-        </div>
-    </footer>
-    <footer id="dev_estudo">
-        <p><strong>Esse site foi desenvolvido para fins de estudos, nada comercial.</strong></p>        
-    </footer>
-
+                        <div class="inputBox">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" name="Endereço" id="endereco" required>
+                        </div>
+                        <br>
+                        <div class="inputBox">
+                            <label for="fone">Celular com DDD</label>
+                            <input type="tel" id="fone" name="fone" id="numero" required pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="73 99999-9999">
+                        </div>
+                        <br>
+                        <div class="inputBox">
+                            <p><b>Quais tipos de salgados?</b></p>
+                            <br>
+                            <input type="checkbox" id="tipo" name="Salgado" value="Coxinha">
+                            <label for="Coxinha">Coxinha</label><br>
+                            <input type="checkbox" id="tipo" name="Salgado" value="Enroladinho">
+                            <label for="Enroladinho">Enroladinho</label><br>
+                            <input type="checkbox" id="tipo" name="Salgado" value="Quibe">
+                            <label for="Quibe">Quibe</label><br>
+                        </div>
+                        <br>
+                        <div class="inputBox">
+                            <label for="Descricao">Descrição/Observação:</label><br>
+                            <textarea id="descricao" name="msg" rows="4" cols="45"></textarea><br>
+                        </div>
+                        <br>
+                        <div class="inputBox">
+                            <input type="submit" value="Enviar" id="submit">
+                        </div>
+                        <br>
+                    </fieldset>
+                </form>
+            </div><br>
+            <div id="WP">
+                <p><b>Ou Entre em contato conosco via WhatsApp:</b></p>
+                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=351922274402&text=Olá!">
+                    <img src="./wp.png" height="100%" width="100%">
+                </a> 
+            </div>
+        </main>
+        <footer id="rodape">
+            <div id="container_rodape">
+                <a href="../Termos E Politica/Termos.html">Termos de uso</a>
+                <a href="../Termos E Politica/Politica.html">Politicas de Privacidade</a>
+            </div>
+        </footer>
+        <footer id="dev_estudo">
+            <p><strong>Esse site foi desenvolvido para fins de estudos, nada comercial.</strong></p>        
+        </footer>
+    </div>
 </body>
 </html>

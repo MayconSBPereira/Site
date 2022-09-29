@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
 /* Referências: 
 Enroladinho: https://minhasdelicias.com/receita/enroladinho-de-salsicha-empanado/
 Coxinha: https://pixabay.com/pt/images/search/coxinha/
@@ -8,50 +10,54 @@ Quibe: https://vimaster.ind.br/4-receitas-de-quibe-que-voce-vai-querer-testar-ag
 *{
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0%;
-    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;  
 }
 body{
     background-image: url(./imagem_rodape.png);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Crimson Text', serif;
+    height: 100vh;
 }
 #lista_menu{  
-    background-color: rgb(180, 1, 1);
+    background-color: #8B8989;
     border-top: 0px;
-    border-left: medium;
-    border-right: medium;
+    border-left: 0px;
+    border-right: 0px;
     border-bottom: medium;
     border-color: black;
     border-style: solid;
-    max-width: 1000px;
+    box-shadow: 0 0 1em black;
+    width: 100%;
+    position: relative;
+    font-family: 'Alkalami', serif;
 }
 
 #lista_menu ul{
-    border-top: medium;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-color: black;
-    border-style: solid;
     list-style-type: none;
-    padding: 0px;
-    background-color: rgb(180, 1, 1);
+    padding-top: 20px;
+    background-color: #EEE9E9;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding-left: 100px;
 }
 
 #lista_menu ul li{
     display: inline;  
 }
 #lista_menu ul li a{
-    color: white;
+    color: red;
     text-decoration: none;
     display: inline-block;
-    padding: 10px;
+    padding-right: 100px;
     transition: background .1,5s;
 }
 #lista_menu ul li a:hover{
-    background-color: rgb(72, 82, 90);
+    color: rgb(0, 0, 0, 0.7);
 }
 #icone{
     list-style-image:  url(./icone-salgado.png.opdownload);
@@ -60,97 +66,111 @@ body{
     height: 60px;
     width: 60px;
     padding: 2px;
+    position: absolute;
+    left: 30px;
 }
 img{
     max-width: 100%;
     max-width: 100%;
 }
-#texto_principal{
-    background-color: rgb(180, 1, 1);
-    color:white;
-    padding: 2px;
+.container_centro{
+    height: 100vh;
     max-width: 1000px;
-    font-size: 50px;
-    text-align: center;
-    border-top: 0px;
-    border-right: medium;
-    border-left: medium;
-    border-bottom: 0px;
-    border-color: black;
-    border-style: solid;
-}
-#container_conteudo{
-    background-color: rgb(180, 1, 1);
-    max-width: 1000px;
+    background-color: white;
     border-top: 0px;
     border-right: medium;
     border-bottom:0px;
     border-left: medium;
     border-style: solid;
-    border-color: black;
+    border-color: black;    
+}
+#texto_principal{
+    display: flex;
+    background-color: white;
+    color:black;
+    padding: 2px;
+    max-width: 1000px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+}
+#container_conteudo{
+    background-color: white;
+    max-width: 1000px;
+    height: 450px;
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 30px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
 }
 #coxinha{
-    max-width: 400px; 
+    max-width: 270px; 
     box-shadow: 0 0 1em rgb(255, 255, 255);
+    border-radius: 5px;
 }
 #enroladinho{
-    max-width: 400px;
+    max-width: 270px;
     box-shadow: 0 0 1em rgb(255, 255, 255);
+    border-radius: 5px;
 }
 #quibe{
-    max-width: 400px;
+    max-width: 270px;
     box-shadow: 0 0 1em rgb(255, 255, 255);
+    border-radius: 5px;
 }
 h3{
     font-size: 13px;
-    color: white;
+    color: black;
+}
+p{
+    color: black;
 }
 #description{
     max-width: 500px;
 }
 #description h3{
-    font-size: 30px;
+    font-size: 17px;
 }
 #description p{
-    font-size: 17px;  
+    font-size: 12px;  
 }
 #formatting{
     display: flex;
     align-items: center;
     max-width: 900px;
 }
+#container_coxinha, #container_enroladinho, #container_quibe{
+    border: #8B8989 solid 3px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 60px;
+}
+#container_coxinha:hover, #container_enroladinho:hover, #container_quibe:hover{
+    border-color: red;
+    box-shadow: 0 0 1.5em red;
+    transition: 0.3s;
+}
 #container_rodape{
     max-height: 25px;
     max-width: 500px;
     display:flex;
 }
-#dev_estudo{
-    color: white;
-    background-color: rgb(180, 1, 1);
-    border-top: medium;
-    border-left: medium;
-    border-right: medium;
-    border-bottom: 0px;
-    border-style: solid;
-    border-color: black;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;   
-    font-size: 12px;
-    max-width: 1000px;
-}
 #rodape{
-    background-color: rgb(180, 1, 1);
+    background-color: #EEE9E9;
     border-top: medium;
-    border-left: medium;
-    border-right: medium;
+    border-left: 0px;
+    border-right: 0px;
     border-bottom: 0px;
     border-style: solid;
     border-color: black;
     text-align: center;
     font-family: 'Open Sans', sans-serif;   
-    max-width: 1000px;
+    width: 100%;
 }
 #rodape h3{
     margin-top: 1px;
@@ -159,12 +179,27 @@ h3{
     text-decoration: none;
 }
 #rodape a:visited{
-    color:white
+    color: black;
 }
 #rodape a:link{
-    color:white
+    color: black;
 }
-
+#dev_estudo{
+    color: black;
+    background-color: #EEE9E9;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 12px;
+    width: 100%;
+}
+@media (max-width: 1001px){
+    .container_centro{
+        max-width: 800px;
+    }
+    #coxinha, #enroladinho, #quibe{
+        max-width: 200px;        
+    }
+}
 @media (max-width: 717px){
     #formatting{
         margin: 0px 15px 0px 15px;

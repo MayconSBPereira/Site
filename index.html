@@ -9,57 +9,66 @@
 </head>
 <body>
     <nav id="lista_menu">
-        <div class="imagem_inicio">
-            <img src="./salgado.png">
-        </div>
+        <img src="./salgado.png" class="imagem_inicio" width="60px" height="60px">
         <ul>
             <li><a href="./index.html"><b>Inicio</b></a></li>
             <li><a href="./QuemSomos/QuemSomos.html"><b>Quem Somos</b></a></li>
             <li><a href="./Contato/Contato.html"><b>Contato</b></a></li>
         </ul>
     </nav>
-    <div id="texto_principal">
-        <br>
-        <p><strong>Olá! Aqui está o nosso cardápio:</strong></p>
-        <br>
+    <div class="container_centro">
+        <div class="container_divisor">
+            <div id="texto_principal">
+                <p><strong>Olá! Aqui está o nosso cardápio:</strong></p>
+            </div>
+            <main id="container_conteudo">
+                <br>
+                <nav id="container_coxinha">
+                    <a href="./Contato/Contato.html">
+                        <img src="./Cardápio/Coxinha.jpg" id="coxinha">
+                        <div id="description">
+                            <br>
+                            <h3><strong>Coxinha de Frango C/Catupiry</strong></h3>                
+                            <p><strong>Ingredientes: Frango, Catupiry e molho especial.</strong></p>                                    
+                        </div></a>
+                </nav>
+                <br>
+                <nav id="container_enroladinho">
+                    <a href="./Contato/Contato.html">
+                        <img src="./Cardápio/enroladinhos.jpg" id="enroladinho">
+                        <div id="description">
+                            <br>
+                            <h3><strong>Enroladinho</strong></h3>
+                            <p><strong>Ingredientes: Salsinha de HotDog e molho especial.</strong></p>
+                        </div></a>
+                    
+                </nav>
+                <br>
+                <nav id="container_quibe">
+                    <a href="./Contato/Contato.html">
+                        <img src="./Cardápio/quibe.jpg" id="quibe">
+                        <div id="description">
+                            <br>
+                            <h3><strong>Quibe</strong></h3>
+                            <p><strong>Ingredientes: Carne moida e molho especial.</strong></p>
+                        </div>
+                    </a>
+                </nav>
+                <br>
+                <br>
+            </main>
+        </div>            
     </div>
-    <main id="container_conteudo">
-        <br>
-        <nav id="formatting">
-            <a href="./Contato/Contato.html"><img src="./Cardápio/Coxinha.jpg" id="coxinha"></a>
-            <div id="description">
-                <h3><strong>Coxinha de Frango C/Catupiry</strong></h3>
-                <p><strong>Ingredientes: Frango, Catupiry e molho especial.</strong></p>                                    
+    <div class="rodapePage">
+        <footer id="rodape">
+            <div id="container_rodape">
+                <a href="./Termos E Politica/Termos.html">Termos de uso</a>
+                <a href="Termos E Politica/Politica.html">Politicas de Privacidade</a>
             </div>
-        </nav>
-        <br>
-        <nav id="formatting">
-            <a href="./Contato/Contato.html"><img src="./Cardápio/enroladinhos.jpg" id="enroladinho"></a>
-            <div id="description">
-                <h3><strong>Enroladinho</strong></h3>
-                <p><strong>Ingredientes: Salsinha de HotDog e molho especial.</strong></p>
-            </div>
-        </nav>
-        <br>
-        <nav id="formatting">
-            <a href="./Contato/Contato.html"><img src="./Cardápio/quibe.jpg" id="quibe"></a>
-            <div id="description">
-                <h3><strong>Quibe</strong></h3>
-                <p><strong>Ingredientes: Carne moida e molho especial.</strong></p>
-            </div>
-        </nav>
-        <br>
-        <br>
-    </main>
-    <footer id="rodape">
-        <div id="container_rodape">
-            <a href="./Termos E Politica/Termos.html">Termos de uso</a>
-            <a href="Termos E Politica/Politica.html">Politicas de Privacidade</a>
-        </div>
-    </footer>
-    <footer id="dev_estudo">
-        <p><strong>Esse site foi desenvolvido para fins de estudos, nada comercial.</strong></p>        
-    </footer>
-    
+        </footer>
+        <footer id="dev_estudo">
+            <p><strong>Esse site foi desenvolvido para fins de estudos, nada comercial.</strong></p>        
+        </footer>
+    </div>
 </body>
 </html>
